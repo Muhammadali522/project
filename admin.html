@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Администратор</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <h1>Администратор</h1>
+        <button id="logout">Выйти</button>
+    </header>
+    <main>
+        <section id="admin">
+            <h2>Управление балансом и штрафами</h2>
+            <div>
+                <label for="user-select">Выберите пользователя:</label>
+                <select id="user-select">
+                    <!-- Опции будут добавлены динамически с помощью JavaScript -->
+                </select>
+            </div>
+            <div>
+                <label for="salary-amount">Сумма зарплаты:</label>
+                <input type="number" id="salary-amount">
+            </div>
+            <button id="add-salary">Начислить зарплату</button>
+            <p id="salary-success-message" style="display:none; color: green;">Зарплата успешно начислена</p>
+            
+            <h2>Добавление водителя</h2>
+            <div>
+                <label for="driver-username">Логин:</label>
+                <input type="text" id="driver-username">
+            </div>
+            <div>
+                <label for="driver-password">Пароль:</label>
+                <input type="password" id="driver-password">
+            </div>
+            <div>
+                <label for="driver-name">Имя:</label>
+                <input type="text" id="driver-name">
+            </div>
+            <div>
+                <label for="driver-salary">Ежечасная зарплата:</label>
+                <input type="number" id="driver-salary">
+            </div>
+            <button id="add-driver">Добавить водителя</button>
+
+            <h2>Список водителей</h2>
+            <ul id="drivers-list"></ul>
+
+            <h2>Просмотр штрафов водителей</h2>
+            <div>
+                <label for="fine-user-select">Выберите водителя:</label>
+                <select id="fine-user-select">
+                    <!-- Опции будут добавлены динамически с помощью JavaScript -->
+                </select>
+            </div>
+            <ul id="admin-fines-list"></ul>
+        </section>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>

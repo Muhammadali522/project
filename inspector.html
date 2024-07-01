@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Инспектор</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <h1>Инспектор</h1>
+        <button id="logout">Выйти</button>
+    </header>
+    <main>
+        <section id="inspector">
+            <h2>Добавление штрафов</h2>
+            <div>
+                <label for="driver-select">Выберите водителя:</label>
+                <select id="driver-select">
+                    <!-- Опции будут добавлены динамически с помощью JavaScript -->
+                </select>
+            </div>
+            <div>
+                <label for="rule-violation">Нарушенное правило:</label>
+                <input type="text" id="rule-violation">
+            </div>
+            <div>
+                <label for="fine-amount">Сумма штрафа:</label>
+                <input type="number" id="fine-amount">
+            </div>
+            <button id="add-fine">Добавить штраф</button>
+            <p id="fine-success-message" style="display:none; color: green;">Штраф успешно добавлен</p>
+            <ul id="fines-list"></ul>
+        </section>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
